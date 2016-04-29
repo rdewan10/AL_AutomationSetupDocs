@@ -1,0 +1,7 @@
+
+# PCI device 0x8086:0x100f (e1000)
+SUBSYSTEM=="net", ACTION=="add", DRIVERS=="?*", ATTR{address}=="00:0c:29:66:42:f4", ATTR{type}=="1", KERNEL=="eth*", NAME="eth0"
+
+# PCI device 0x8086:0x100f (e1000)
+SUBSYSTEM=="net", ACTION=="add", DRIVERS=="?*", ATTR{address}=="00:0c:29:66:42:fe", ATTR{type}=="1", KERNEL=="eth*", NAME="eth1"
+

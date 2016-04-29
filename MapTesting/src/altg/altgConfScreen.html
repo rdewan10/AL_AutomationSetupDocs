@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Config-AL Test Automation</title>
+</head>
+<body>
+
+<br><br>
+
+<form action="screen_config_mapbundle.html"
+enctype="multipart/form-data" method="post">
+<fieldset>
+<legend>ArcLight Test Automation Map Bundles Configuration</legend>
+<p>
+Map Bundle File: 
+<input type="file" name="datafile" size="400">
+</p>
+<table>
+<tr>
+<td align="right">FL Profile:</td>
+<td align="left"><input type="text" name="mapbprofile" value="SL-ACSM">
+</td>
+</tr>
+<tr>
+<td align="right">Install Script:</td>
+<td align="left"><input type="text" name="mapbscript" value="scriptReboot-1.0.0.3.sh">
+</td>
+</tr>
+<tr>
+<td align="right">Satellite Id(new):</td>
+<td align="left"><input type="text" name="mapbsatnew" value="21">
+</td>
+</tr>
+</table>
+<div>
+<input type="submit" value="Save">
+</div>
+</fieldset>
+</form>
+
+<br>
+
+<form action="screen_config_nmsaccess.html">
+<fieldset>
+<legend>ArcLight Test Automation NMS/EMS GUI Access Configuration</legend>
+<table>
+<tr>
+<td align="right">IP:</td>
+<td align="left"><input type="text" name="nmsip" value="192.168.111.254">
+</td>
+</tr>
+<tr>
+<td align="right">Port:</td>
+<td align="left"><input type="text" name="nmsport" value="9090">
+</td>
+</tr>
+<tr>
+<td align="right">Username:</td>
+<td align="left"><input type="text" name="nmsuname" value="altest">
+</td>
+</tr>
+<tr>
+<td align="right">Password:</td>
+<td align="left"><input type="password" name="nmspw" value="viasat123">
+</td>
+</tr>
+</table>
+<br><br>
+<input type="submit" value="Save">
+</fieldset>
+</form>
+
+<br>
+
+<form action="screen_config_termaccess.html">
+<fieldset>
+<legend>ArcLight Test Automation Terminal Access Configuration</legend>
+<table>
+<tr>
+<td align="right">IP:</td>
+<td align="left"><input type="text" name="termip" value="192.168.111.254">
+</td>
+</tr>
+<tr>
+<td align="right">Port:</td>
+<td align="left"><input type="text" name="termport" value="9090">
+</td>
+</tr>
+<tr>
+<td align="right">Username:</td>
+<td align="left"><input type="text" name="termuname" value="altest">
+</td>
+</tr>
+<tr>
+<td align="right">Password:</td>
+<td align="left"><input type="password" name="termpw" value="viasat123">
+</td>
+</tr>
+<tr>
+<td align="right">Terminal Name:</td>
+<td align="left"><input type="text" name="termname" value="Terminal 04 - 82.1">
+</td>
+</tr>
+<tr>
+<td align="right">Terminal CLI:</td>
+<td align="left"><input type="radio" name="termcmd" value="serial" checked>Console</td>
+<td align="left"><input type="radio" name="termcmd" value="ssh" checked>SSH</td>
+</tr>
+<tr>
+<td align="right">Console Port:</td>
+<td align="left"><input type="text" name="serial" value="terminal_4">
+</td>
+</tr>
+</table>
+<br><br>
+<input type="submit" value="Save">
+</fieldset>
+</form>
+
+<br><br>
+<a href="screen_config_tuning.html"> Test Automation Tuning Parameters </a>
+
+<br><br>
+<form action="screen_config_clear.html">
+<input type="submit" value="Reset">
+</fieldset>
+</form>
+
+</body>
+
+</html>
+

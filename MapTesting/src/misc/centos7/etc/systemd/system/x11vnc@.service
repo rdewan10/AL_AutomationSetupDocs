@@ -1,0 +1,10 @@
+[Unit]
+Description=x11vnc server for xvfb display %I 
+After=xvfb@.service
+
+[Service]
+Type=simple
+ExecStart=/usr/bin/x11vnc -rfbport 5900 -display %I -forever -shared
+
+[Install]
+WantedBy=multi-user.target

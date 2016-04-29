@@ -1,0 +1,3 @@
+The .php files in //Arclight/ArcLight/AcceptanceTest/Automation/MapTesting/src/redaweb are the deltas customized to AL from the "baseline" REDA php webfiles from //Broadband/TestTools/Reda/SB2/ (because //Broadband/TestTools/Reda/performance/source/ is out-of-date) and stored locally as redawebpages.tar.gz. 
+ 
+To install extract the //Arclight/ArcLight/AcceptanceTest/Automation/MapTesting/src/redaweb/redawebpages.tar.gz (tar xzvf) into /var/www/cgi-bin/ (creates ./reda) and then copy //Arclight/ArcLight/AcceptanceTest/Automation/MapTesting/src/redaweb/*.php to /var/www/cgi-bin/reda to "patch" reda with the arclight updates
